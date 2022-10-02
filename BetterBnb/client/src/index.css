@@ -1,0 +1,225 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-size: 100%;
+  min-height: 100%;
+}
+
+form {
+  padding: 20px;
+  margin-top: 60px;
+}
+
+form button,
+form h5 {
+  margin: 20px 0;
+}
+
+input[type="text"]:not(.browser-default):focus:not([readonly]),
+input[type="email"]:not(.browser-default):focus:not([readonly]),
+input[type="password"]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-color: #ec407a;
+  box-shadow: none;
+}
+
+input[type="text"]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label,
+input[type="email"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="password"]:not(.browser-default):focus:not([readonly]) + label {
+  color: #ec407a !important;
+}
+
+.icon-holder {
+  position: relative;
+}
+
+#heart {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  margin: 2px;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 163, 102);
+}
+#heartfull {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  margin: 2px;
+  -webkit-text-fill-color: rgb(255, 163, 102);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 163, 102);
+}
+
+#custom-warning {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #dcdcdc; /* Gray */
+  border: 1px #e0e0e0;
+  border-radius: 8px;
+  color: white;
+  padding: 50px 120px 50px 120px;
+  text-align: center;
+  z-index: 2;
+  visibility: hidden;
+}
+
+#custom-warning.custom-visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 4s linear;
+  -webkit-animation-name: fadeout; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+  animation-name: fadeout;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Standard syntax */
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.custom-hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+.slider {
+  position: relative;
+  width: 700px;
+  margin: 0 auto;
+  height: 500px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.slider-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.slide {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.arrow {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9f9f9;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform ease-in 0.1s;
+}
+
+.nextArrow {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  z-index: 999;
+  color: #fff;
+}
+
+.backArrow {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  z-index: 999;
+  color: #fff;
+}
+
+.fa-arrow-right:before,
+.fa-arrow-left:before {
+  color: #222;
+}
+
+.mainbg {
+  background-blend-mode: url("/uploads/background_main.jpg") no-repeat 50% 50%;
+
+  background-size: cover;
+  height: 90vh;
+}
+.main-banner {
+  background: url("/uploads/pexels-photo-949587.jpeg") no-repeat 50% 50%;
+  background-size: cover;
+  min-height: 100px;
+}
+
+.personal-bgcolor {
+  background-color: rgb(255, 255, 255) !important;
+}
+.top-bg {
+  background-color: rgba(233, 233, 233, 0.521);
+}
+nav ul li a {
+  color: black;
+}
+
+.gap {
+  margin-bottom: 10px;
+}
+
+/* input {
+  margin-bottom: 10px;
+  width: 200px;
+  height: 20px;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+input + label {
+  position: relative;
+  left: -216px;
+  color: #999;
+  font-size: 14px;
+}
+input:invalid + label {
+  display: inline-block;
+}
+input:valid + label {
+  display: none;
+} */
+
+i.icon-green {
+  color: green;
+}
+.calendar-item {
+  background-color: #c9dcda;
+  padding: 5px;
+  margin: 1px;
+  border-radius: 5px;
+}
+
+.inactive {
+  background-color: #eee;
+  padding: 5px;
+  margin: 1px;
+}
